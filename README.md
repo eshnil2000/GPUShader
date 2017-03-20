@@ -18,7 +18,7 @@ data from Channel1
 
 # GPUShader
 Example for shadertoy
-
+```
 void mainImage( out vec4 fragColor, in vec2 fragCoord )
 {
     vec2 xy = fragCoord.xy / iResolution.xy;//Condensing this into one line
@@ -32,9 +32,11 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
         fragColor=texColor0;
     }
 }
+```
 
 # Shader Inputs
 Shader Inputs
+```
 uniform vec3      iResolution;           // viewport resolution (in pixels)
 uniform float     iGlobalTime;           // shader playback time (in seconds)
 uniform float     iTimeDelta;            // render time (in seconds)
@@ -45,6 +47,8 @@ uniform vec4      iMouse;                // mouse pixel coords. xy: current (if 
 uniform samplerXX iChannel0..3;          // input channel. XX = 2D/Cube
 uniform vec4      iDate;                 // (year, month, day, time in seconds)
 uniform float     iSampleRate;           // sound sample rate (i.e., 44100)
+
+```
 
 # Great tutorial
 https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-coding-graphics-shaders--cms-23313

@@ -1,5 +1,5 @@
 # Example Shader 
-run on Shadertoy, no GPU setup required
+run on Shadertoy, no GPU setup required. written in GLSL, and run in your browser using WebGL.
 # out vec4 fragColor 
 is the output from the GPU. in vec2 fragCoord is input to the GPU
 

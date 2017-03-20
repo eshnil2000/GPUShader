@@ -1,13 +1,20 @@
-# Example Shader run on Shadertoy, no GPU setup required
-# out vec4 fragColor is the output from the GPU. in vec2 fragCoord is input to the GPU
+# Example Shader 
+run on Shadertoy, no GPU setup required
+# out vec4 fragColor 
+is the output from the GPU. in vec2 fragCoord is input to the GPU
 
-# A shader's sole purpose is to return four numbers: r, g, b,and a, returned as a vec4.
+# A shader's sole purpose 
+is to return four numbers: r, g, b,and a, returned as a vec4.
+
+# Variables
+If something is not a built in variable, you can send that information from the CPU (your main program) to the GPU (your shader). ShaderToy handles that for us. You can see all the variables being passed to the shader in the Shader Inputs tab. Variables passed in this way from CPU to GPU are called uniform in GLSL. 
+
  
-# Assume Channel0 is a video with green background, and is the default input
-# Wherever the green component is dominanant (texColor0.r+texColor0.b) < texColor0.g, use 
-# data from Channel1
-
-# If something is not a built in variable, you can send that information from the CPU (your main program) to the GPU (your shader). ShaderToy handles that for us. You can see all the variables being passed to the shader in the Shader Inputs tab. Variables passed in this way from CPU to GPU are called uniform in GLSL. 
+# What are we trying to do?
+We want to mix 2 video channels, use channel1 as the background for channel0.
+Assume Channel0 is a video with green background, and is the default input
+Wherever the green component is dominanant (texColor0.r+texColor0.b) < texColor0.g, use 
+data from Channel1
 
 # GPUShader
 Example for shadertoy
